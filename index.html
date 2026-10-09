@@ -1,9 +1,177 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portafolio profesional de Pedro Saravia, desarrollador Full Stack Java." />
+    <meta name="theme-color" content="#f4f3ef" />
+    <title>Pedro Saravia | Desarrollador Full Stack Java</title>
+
+    <!-- Tipografías: Manrope para interfaz y DM Sans para lectura. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Bootstrap aporta la grilla y el menú responsive; los estilos propios están en styles.css. -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="site-header sticky-top">
+      <nav class="navbar navbar-expand-lg" aria-label="Navegación principal">
+        <div class="container nav-container">
+          <a class="navbar-brand" href="#inicio" aria-label="Pedro Saravia, inicio">PS<span>.</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#siteNav" aria-controls="siteNav" aria-expanded="false" aria-label="Abrir navegación">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="siteNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+              <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+              <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+              <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+              <li class="nav-item"><a class="nav-link" href="#educacion">Educación</a></li>
+              <li class="nav-item"><a class="nav-link" href="#reflexion">Reflexión</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+              <li class="nav-item ms-lg-3">
+                <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activar modo oscuro" title="Cambiar tema">
+                  <span class="theme-icon" aria-hidden="true">☾</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="contenido">
+      <section class="hero section-shell" id="inicio">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7 hero-copy">
+              <p class="eyebrow"><span class="eyebrow-line"></span> DESARROLLO DE SOFTWARE · LIMA, PERÚ</p>
+              <h1>Construyo soluciones digitales con <span>claridad y propósito.</span></h1>
+              <p class="hero-lead">Soy Pedro Saravia, desarrollador Full Stack Java. Me interesa crear productos útiles, bien estructurados y fáciles de mantener.</p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#proyectos">Explorar proyectos <span aria-hidden="true">↘</span></a>
+                <a class="text-link" href="#contacto">Hablemos <span aria-hidden="true">→</span></a>
+              </div>
+              <p class="hero-note"><span class="status-dot"></span> Disponible para nuevas oportunidades</p>
+            </div>
+            <div class="col-lg-5">
+              <div class="portrait-frame">
+                <!-- Reemplaza esta URL por tu retrato: assets/pedro-saravia.jpg. -->
+                <img class="portrait-image" src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85" alt="Espacio de trabajo con portátil y cuaderno" />
+                <div class="portrait-caption"><span>Enfoque actual</span><strong>Backend · Java · Aprendizaje continuo</strong></div>
+                <span class="portrait-index" aria-hidden="true">01 / 08</span>
+              </div>
+            </div>
+          </div>
+          <a class="scroll-cue" href="#sobre-mi"><span></span> Desplazar para conocer más</a>
+        </div>
+      </section>
+
+      <section class="content-section section-shell" id="sobre-mi">
+        <div class="container">
+          <div class="section-heading row g-3 align-items-end">
+            <div class="col-md-4"><p class="eyebrow">01 — PERFIL</p><h2>Sobre mí</h2></div>
+            <div class="col-md-7 offset-md-1"><p class="section-intro">Una mirada práctica al desarrollo: entender el problema, diseñar una solución y mejorarla con cada iteración.</p></div>
+          </div>
+          <div class="about-grid row g-4">
+            <div class="col-lg-7"><p class="about-body">Me formé como desarrollador Full Stack Java en un bootcamp, donde trabajé en aplicaciones web desde su lógica de negocio hasta su interfaz. Disfruto especialmente comprender cómo se conectan las distintas partes de un sistema y convertir requisitos en funcionalidades claras.</p><p class="about-body">Busco incorporarme a un equipo donde pueda aportar constancia, curiosidad y una buena base técnica, mientras sigo creciendo con proyectos reales y colaboración cercana.</p></div>
+            <div class="col-lg-4 offset-lg-1"><div class="about-facts"><div><span>01</span><p>Aprendizaje<br />con intención</p></div><div><span>02</span><p>Trabajo en equipo<br />y comunicación</p></div><div><span>03</span><p>Atención al detalle<br />y mejora continua</p></div></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section projects-section section-shell" id="proyectos">
+        <div class="container">
+          <div class="section-heading row g-3 align-items-end">
+            <div class="col-md-4"><p class="eyebrow">02 — TRABAJO SELECCIONADO</p><h2>Proyectos</h2></div>
+            <div class="col-md-7 offset-md-1"><p class="section-intro">Dos espacios para mostrar cómo abordas un reto, qué decisiones tomaste y qué aprendiste al construirlo.</p></div>
+          </div>
+          <article class="project-item row g-4 align-items-center">
+            <div class="col-lg-5"><div class="project-visual visual-one"><span class="visual-label">PROYECTO 01</span><div class="visual-lines"><i></i><i></i><i></i><i></i></div><span class="visual-mark">01</span></div></div>
+            <div class="col-lg-6 offset-lg-1 project-copy"><p class="eyebrow">APLICACIÓN WEB · 2025</p><h3><!-- Reemplaza por el título real del proyecto. -->Nombre del proyecto uno</h3><p><!-- Reemplaza por una descripción breve: objetivo, usuarios y problema resuelto. -->Aplicación web para organizar información y simplificar una tarea cotidiana. Aquí puedes contar qué necesidad detectaste y cuál fue tu aporte principal.</p><div class="tech-list" aria-label="Tecnologías utilizadas"><span>Java</span><span>Spring Boot</span><span>PostgreSQL</span><span>JavaScript</span></div><div class="project-links"><a href="https://github.com/" target="_blank" rel="noreferrer">Repositorio <span aria-hidden="true">↗</span></a><a href="https://example.com/" target="_blank" rel="noreferrer">Demo <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+          <article class="project-item row g-4 align-items-center">
+            <div class="col-lg-5 order-lg-2"><div class="project-visual visual-two"><span class="visual-label">PROYECTO 02</span><div class="visual-chart"><i></i><i></i><i></i><i></i><i></i></div><span class="visual-mark">02</span></div></div>
+            <div class="col-lg-6 order-lg-1 project-copy"><p class="eyebrow">PLATAFORMA DIGITAL · 2025</p><h3><!-- Reemplaza por el título real del proyecto. -->Nombre del proyecto dos</h3><p><!-- Reemplaza por una descripción breve y específica de este proyecto. -->Plataforma enfocada en ofrecer una experiencia sencilla y consistente. Describe aquí las funcionalidades que implementaste y los desafíos técnicos que resolviste.</p><div class="tech-list" aria-label="Tecnologías utilizadas"><span>Java</span><span>REST API</span><span>MySQL</span><span>Bootstrap</span></div><div class="project-links"><a href="https://github.com/" target="_blank" rel="noreferrer">Repositorio <span aria-hidden="true">↗</span></a><a href="https://example.com/" target="_blank" rel="noreferrer">Demo <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section section-shell" id="habilidades">
+        <div class="container">
+          <div class="section-heading row g-3 align-items-end">
+            <div class="col-md-4"><p class="eyebrow">03 — CAJA DE HERRAMIENTAS</p><h2>Habilidades</h2></div>
+            <div class="col-md-7 offset-md-1"><p class="section-intro">Tecnologías con las que he trabajado y que continúo practicando. Ajusta la lista a tu experiencia real.</p></div>
+          </div>
+          <div class="skills-grid row g-4">
+            <div class="col-md-6 col-lg-3"><div class="skill-group"><span class="skill-number">01</span><h3>Backend</h3><ul><li>Java</li><li>Spring Boot</li><li>APIs REST</li><li><!-- Añade aquí otra tecnología. -->[Añadir tecnología]</li></ul></div></div>
+            <div class="col-md-6 col-lg-3"><div class="skill-group"><span class="skill-number">02</span><h3>Frontend</h3><ul><li>HTML y CSS</li><li>JavaScript</li><li>Bootstrap</li><li><!-- Añade aquí otra tecnología. -->[Añadir tecnología]</li></ul></div></div>
+            <div class="col-md-6 col-lg-3"><div class="skill-group"><span class="skill-number">03</span><h3>Datos</h3><ul><li>MySQL</li><li>PostgreSQL</li><li>Modelado de datos</li><li><!-- Añade aquí otra tecnología. -->[Añadir tecnología]</li></ul></div></div>
+            <div class="col-md-6 col-lg-3"><div class="skill-group"><span class="skill-number">04</span><h3>Herramientas</h3><ul><li>Git y GitHub</li><li><!-- Añade tus herramientas. -->[Añadir herramienta]</li><li><!-- Añade tus herramientas. -->[Añadir herramienta]</li><li><!-- Añade tus herramientas. -->[Añadir herramienta]</li></ul></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section journey-section section-shell" id="experiencia">
+        <div class="container">
+          <div class="section-heading row g-3 align-items-end">
+            <div class="col-md-4"><p class="eyebrow">04 — RECORRIDO</p><h2>Experiencia</h2></div>
+            <div class="col-md-7 offset-md-1"><p class="section-intro">Prácticas profesionales de seis meses: un espacio para aportar, colaborar y aprender en un entorno real.</p></div>
+          </div>
+          <div class="row g-5 journey-columns">
+            <div class="col-lg-8"><article class="timeline-entry"><span class="timeline-date">6 MESES · [AÑO]</span><h3>Prácticas profesionales</h3><p class="entry-place">[Empresa] · [Área o equipo]</p><p><!-- Completa con tus responsabilidades, herramientas y logros concretos. -->Describe aquí tus responsabilidades, las tecnologías que utilizaste y un resultado o aprendizaje relevante de tus prácticas.</p></article><p class="edit-hint">Completa empresa, fechas, responsabilidades y logros medibles.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section education-section section-shell" id="educacion">
+        <div class="container">
+          <div class="section-heading row g-3 align-items-end">
+            <div class="col-md-4"><p class="eyebrow">05 — FORMACIÓN</p><h2>Educación</h2></div>
+            <div class="col-md-7 offset-md-1"><p class="section-intro">Una formación que combina fundamentos de informática, análisis de datos y servicios en la nube.</p></div>
+          </div>
+          <div class="row g-5 journey-columns">
+            <div class="col-lg-8"><article class="timeline-entry"><span class="timeline-date">[AÑO DE INICIO – AÑO DE FIN]</span><h3>Ingeniería Informática</h3><p class="entry-place">Universidad Católica Sedes Sapientiae (UCSS)</p><p>Formación en fundamentos de computación, sistemas y desarrollo de software.</p></article><article class="timeline-entry"><span class="timeline-date">[AÑO]</span><h3>Analista de Datos</h3><p class="entry-place">Le Wagon</p><p>Formación intensiva en análisis de datos y herramientas para transformar información en hallazgos.</p></article><article class="timeline-entry"><span class="timeline-date">[AÑO]</span><h3>AWS Certified Cloud Practitioner</h3><p class="entry-place">Amazon Web Services</p><p><!-- Confirma el nombre oficial y vigencia de tu certificación. -->Certificación de fundamentos de nube. Añade fecha de obtención y enlace a la credencial verificable.</p></article></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reflection-section section-shell" id="reflexion">
+        <div class="container"><div class="reflection-content"><p class="eyebrow">06 — EN CONSTRUCCIÓN</p><h2>Aprender también es saber qué mejorar.</h2><p>Quiero profundizar en arquitectura de software, pruebas automatizadas y despliegue en la nube. A corto plazo, mi meta es contribuir a un equipo y fortalecer mis fundamentos con experiencia real. A largo plazo, aspiro a diseñar sistemas confiables y acompañar a otros desarrolladores en su crecimiento.</p><p class="reflection-note"><!-- Personaliza este cierre con una motivación o meta que sea genuina para ti. -->Estoy construyendo mi camino con curiosidad, constancia y apertura al feedback.</p></div></div>
+      </section>
+
+      <section class="content-section contact-section section-shell" id="contacto">
+        <div class="container">
+          <div class="section-heading row g-3 align-items-end">
+            <div class="col-md-5"><p class="eyebrow">07 — CONVERSEMOS</p><h2>Contacto</h2></div>
+            <div class="col-md-6 offset-md-1"><p class="section-intro">Estoy abierto a conversar sobre oportunidades, colaboración y desarrollo de software.</p></div>
+          </div>
+          <div class="row g-5 contact-layout">
+            <div class="col-lg-7">
+              <!-- Para activar el envío, reemplaza YOUR_FORM_ID por el ID de tu formulario en Formspree. -->
+              <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <div class="row g-3">
+                  <div class="col-md-6"><label for="name">Nombre</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Tu nombre" required /></div>
+                  <div class="col-md-6"><label for="email">Correo electrónico</label><input id="email" name="email" type="email" autocomplete="email" placeholder="tu@correo.com" required /></div>
+                  <div class="col-12"><label for="subject">Asunto</label><input id="subject" name="subject" type="text" placeholder="¿Sobre qué te gustaría conversar?" required /></div>
+                  <div class="col-12"><label for="message">Mensaje</label><textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje..." required></textarea></div>
+                  <div class="col-12 form-submit-row"><button class="button button-primary" type="submit">Enviar mensaje <span aria-hidden="true">→</span></button><p id="formStatus" class="form-status" role="status" aria-live="polite"></p></div>
+                </div>
+              </form>
+            </div>
+            <aside class="col-lg-4 offset-lg-1 contact-aside"><p class="eyebrow">TAMBIÉN PUEDES ENCONTRARME EN</p><a class="social-link" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a><a class="social-link" href="https://github.com/" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a><div class="contact-email"><span>Correo</span><a href="mailto:pedro.saravia@email.com">pedro.saravia@email.com</a></div><!-- Cambia correo y enlaces por los tuyos. --></aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><div class="container d-flex flex-column flex-sm-row justify-content-between gap-2"><span>© <span id="currentYear"></span> Pedro Saravia</span><span>Hecho con intención, en Lima.</span><a href="#inicio">Volver al inicio ↑</a></div></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
