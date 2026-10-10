@@ -48,9 +48,9 @@ contactForm.addEventListener("submit", async (event) => {
   formStatus.textContent = "";
   formStatus.classList.remove("is-error");
 
-  const endpoint = contactForm.getAttribute("action");
-  if (endpoint.includes("YOUR_FORM_ID")) {
-    formStatus.textContent = "Configura tu ID de Formspree en el atributo action para activar el envío.";
+  const accessKey = contactForm.elements.access_key.value.trim();
+  if (!accessKey || accessKey === "YOUR_WEB3FORMS_ACCESS_KEY") {
+    formStatus.textContent = "Agrega tu access key de Web3Forms en el HTML para activar el envío.";
     formStatus.classList.add("is-error");
     return;
   }
@@ -61,14 +61,15 @@ contactForm.addEventListener("submit", async (event) => {
   formStatus.textContent = "Enviando mensaje...";
 
   try {
-    const response = await fetch(endpoint, {
+    const response = await fetch(contactForm.action, {
       method: "POST",
       body: new FormData(contactForm),
       headers: { Accept: "application/json" },
     });
+    const result = await response.json();
 
-    if (!response.ok) {
-      throw new Error("No se pudo enviar el mensaje.");
+    if (!response.ok || !result.success) {
+      throw new Error(result.message || "No se pudo enviar el mensaje.");
     }
 
     contactForm.reset();

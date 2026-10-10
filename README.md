@@ -15,7 +15,7 @@ En el sitio encontrarás:
 - Navegación por secciones y menú adaptable a dispositivos móviles.
 - Alternancia entre tema claro y oscuro, con preferencia guardada en el navegador.
 - Secciones de perfil, proyectos, habilidades, experiencia, educación y contacto.
-- Formulario de contacto preparado para integrarse con Formspree.
+- Formulario de contacto integrado con Web3Forms.
 - Diseño adaptable y enlace para saltar directamente al contenido.
 
 ## Tecnologías
@@ -25,7 +25,7 @@ En el sitio encontrarás:
 - JavaScript
 - Bootstrap 5.3.3 (CDN)
 - Google Fonts: Manrope y DM Sans
-- Formspree (integración opcional para el formulario)
+- Web3Forms (formulario de contacto)
 
 ## Ejecutar localmente
 
@@ -47,7 +47,7 @@ Todavía hay algunos textos y enlaces de ejemplo. Antes de compartir el sitio, a
 - Los enlaces de LinkedIn y GitHub, y el correo de contacto.
 - La imagen del encabezado, sustituyendo la URL de ejemplo por una imagen propia.
 
-También puedes activar el formulario de contacto creando uno en Formspree y reemplazando `YOUR_FORM_ID` en el atributo `action` con tu identificador. Mientras no lo configures, el formulario avisará que no puede enviar mensajes.
+El formulario usa Web3Forms. Configura tu Access Key en el campo oculto `access_key` de `index.html` y confirma el correo asociado a tu cuenta antes de probar el envío.
 
 ## Publicación
 

@@ -152,8 +152,9 @@
           </div>
           <div class="row g-5 contact-layout">
             <div class="col-lg-7">
-              <!-- Para activar el envío, reemplaza YOUR_FORM_ID por el ID de tu formulario en Formspree. -->
-              <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <!-- Reemplaza el valor de access_key por tu clave de Web3Forms. -->
+              <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="2c5f620d-52ed-4199-adf7-e9224c2db8d3" />
                 <div class="row g-3">
                   <div class="col-md-6"><label for="name">Nombre</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Tu nombre" required /></div>
                   <div class="col-md-6"><label for="email">Correo electrónico</label><input id="email" name="email" type="email" autocomplete="email" placeholder="tu@correo.com" required /></div>
