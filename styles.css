@@ -114,16 +114,17 @@ h1, h2, h3, h4, .navbar-brand { font-family: "Manrope", sans-serif; letter-spaci
 .skill-group { border-top: 1px solid var(--line); }
 .skill-group h3 { font-size: 1.15rem; }
 .skill-group li { color: var(--muted); font-size: .89rem; }
-.skill-group li:last-child { color: var(--warm); font-size: .79rem; }
 
 .journey-section, .education-section { background: var(--surface); }
 .timeline-entry { border-left: 1px solid var(--line); }
 .timeline-entry::before { position: absolute; top: 6px; left: -4px; width: 7px; height: 7px; border-radius: 50%; background: var(--warm); content: ""; }
+.timeline-content { display: flex; align-items: flex-start; gap: 16px; }
+.timeline-logo { flex: 0 0 56px; width: 56px; height: 56px; border: 1px solid var(--line); background: var(--page); object-fit: contain; }
+.timeline-content > div { min-width: 0; }
 .timeline-date { color: var(--accent); font-size: .68rem; letter-spacing: .05em; }
 .timeline-entry h3 { font-size: 1.05rem; }
 .timeline-entry p { color: var(--muted); font-size: .87rem; }
 .timeline-entry .entry-place { color: var(--ink); font-size: .78rem; font-weight: 600; }
-.edit-hint { color: var(--warm); font-size: .73rem; }
 
 .reflection-section { background: var(--accent-deep); color: #f4f3ef; }
 .reflection-section::after { position: absolute; top: -155px; right: -65px; width: 410px; height: 410px; border: 1px solid rgb(244 243 239 / 18%); border-radius: 50%; content: ""; }
@@ -141,7 +142,8 @@ h1, h2, h3, h4, .navbar-brand { font-family: "Manrope", sans-serif; letter-spaci
 .form-status { color: var(--accent); font-size: .81rem; }
 .form-status.is-error { color: var(--warm); }
 .social-link { border-bottom: 1px solid var(--line); font-family: "Manrope", sans-serif; font-size: 1.12rem; }
-.social-link span { color: var(--warm); }
+.social-link > span:last-child { color: var(--warm); }
+.social-logo { width: 20px; height: 20px; flex: 0 0 20px; color: var(--accent); fill: currentColor; }
 .contact-email span { color: var(--muted); font-size: .72rem; }
 .contact-email a { font-size: .86rem; text-decoration-color: var(--line); text-underline-offset: 4px; }
 .site-footer { border-top: 1px solid var(--line); color: var(--muted); font-size: .73rem; }
